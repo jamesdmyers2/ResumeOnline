@@ -155,7 +155,6 @@
            Message: contactMessage
        }
 
-       debugger;
       $.ajax({
 
 	      type: "POST",

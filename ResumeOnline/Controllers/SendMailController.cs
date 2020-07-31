@@ -25,7 +25,7 @@ namespace ResumeOnline.Controllers
 
                     return "Email has been sent, thank you!";
                 else
-                    return response + ": Email Failed";
+                    return "Email Failed";
 
             }
             catch (Exception ex)
