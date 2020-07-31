@@ -18,6 +18,7 @@ namespace ResumeOnline.Controllers
         [HttpPost]
         public async Task<string> PostAsync(SendEmailInterface res)
         {
+            return "Made it here!";
             try
             {
                 var response = await Execute(res);
