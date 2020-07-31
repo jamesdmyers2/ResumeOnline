@@ -1,0 +1,230 @@
+﻿{
+  "basics": {
+    "name": "James Myers",
+    "label": "Programmer",
+    "picture": "images/james_pic.png",
+    "email": "jamesdmyers2@gmail.com",
+    "phone": "(910) 617-4960",
+    "website": "http://johndoe.com",
+    "linkedin": "www.linkedin.com/in/james-d-myers-ii",
+    "intro": [
+      "Welcome To My Online Resume!",
+      "This site showcases my skills in building a website utilizing React.js, C#, bootstrap, Axios, json, and other technologies, as well as giving you my background."
+    ],
+    "summary": "Management and development professional with 20 years of Information Technology experience in the healthcare, telecommunications and accounting industries.  Strong emphasis on development and implementation of new technologies and API’s",
+    "highlights": [
+      "Demonstrated ability to manage and develop new functionality to increase client revenues and improve the customer experience",
+      "Strength in building relationships at the management level and facilitating communications across client and technical teams to identify and deliver solution",
+      "Proven track record in learning new development languages and adapting to new technologies",
+      "Experienced in SaaS and Agile development methodology"
+    ],
+    "github": "https://github.com/jamesdmyers2/ResumeOnline.git",
+    "resumedownload": "http://google.com",
+    "location": {
+      "address": "535 Fawn Glen Ct",
+      "city": "Roswell",
+      "state": "GA",
+      "postalCode": "30075",
+      "countryCode": "US",
+      "region": "Georgia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "James Myers",
+        "url": "http://twitter.com/john"
+      },
+      {
+        "network": "Github",
+        "username": "James Myers",
+        "url": "https://github.com/jamesdmyers2/ResumeOnline.git"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Akamai",
+      "position": "Engagement Manager",
+      "city": "Atlanta",
+      "state": "GA",
+      "website": "http://akamai.com",
+      "startDate": "2018-08-01",
+      "endDate": "2019-09-01",
+      "summary": "Focused on maximizing customer satisfaction, retention and growth by building strong customer relationships, driving value reinforcement and adoption of products and services, and managing technical teams to deliver integration solutions.",
+      "highlights": [
+        "Central point of contact for Fortune 500 customers with a combined ARR of $10MM, serving as the escalation point for success resolution of operational issues",
+        "Responsible for program and technical account management, creates and maintains operational controls and tracks performance metrics and delivery schedules",
+        "Leads all program/project meetings and client business reviews"
+      ]
+    },
+    {
+      "company": "PURSUANT HEALTH",
+      "position": "Senior Software Engineer ",
+      "website": "http://pursuanthealth.com",
+      "startDate": "2017-02-01",
+      "endDate": "2017-12-30",
+      "summary": "Responsible for the design, development and support of a consumer facing healthcare application in a LAMP stack environment",
+      "highlights": [
+        "PHP Full Stack Developer",
+        "Working with a digital sign partner, architected a solution to displaying ads in the core application",
+        "Migrated applications to new PHP MVC model",
+        "Used Docker, AWS, GIT, Bitbucket and WordPress to design and develop custom solutions for clients",
+        "Created new queries and data manipulations using MySQL for testing and upgrading"
+      ]
+    },
+    {
+      "company": "INGENIOUS MED",
+      "position": "Senior Software Engineer ",
+      "website": "http://ingeniousmed.com",
+      "startDate": "2013-01-01",
+      "endDate": "2017-01-01",
+      "summary": "Responsible for the design, development and support of the healthcare revenue cycle management application",
+      "highlights": [
+        "C# .NET Full stack developer",
+        "Used Mirth and SQL stored procedures to integrate HL7 messages from Epic, Cerner, Allscripts, MediTech and other registration, EMR, and Billing systems into the application",
+        "Modified and developed new and existing functionality using Visual Studio 2015 (C# and JavaScript)",
+        "Customized MicroStrategy to integrate with LDAP platform using java plugins to validate users and access control",
+        "Worked with BI team and customers to architect dashboards and metrics for healthcare data",
+        "Determined HIPAA compliance for tracking user access of PHI during reporting",
+        "Developed application solutions compatible with multiple versions of Windows and Chrome platforms",
+        "Used agile methodologies to estimate story points for development sprints"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "website": "http://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Western Carolina University",
+      "area": "Computer Information Systems",
+      "studyType": "Bachelor of Science, Business Administration",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "gpa": "",
+      "courses": [
+        ""
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }
+  ],
+  "skills": [
+    {
+      "name": "C#",
+      "level": "60%"
+    },
+    {
+      "name": "JAVA",
+      "level": "50%"
+    },
+    {
+      "name": "PHP",
+      "level": "40%"
+    },
+    {
+      "name": "Visual Basic",
+      "level": "20%"
+    },
+    {
+      "name": "React",
+      "level": "30%"
+    },
+    {
+      "name": "JavaScript",
+      "level": "50%"
+    },
+    {
+      "name": "MySQL",
+      "level": "80%"
+    },
+
+    {
+      "name": "SQL",
+      "level": "90%"
+    },
+    {
+      "name": "SOAP",
+      "level": "50%"
+    },
+    {
+      "name": "HL7",
+      "level": "40%"
+    },
+    {
+      "name": "HTML",
+      "level": "90%"
+    },
+    {
+      "name": "CSS",
+      "level": "90%"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "I have known James professionally for nearly twenty years. I have worked with him at two companies. James is very versatile in his skills and willing to help the organization move forward. At Verisign, James was one of the main developers and support team members for the wireless provisioning application. The main function of this area of the system provisioned wireless subscribers into the switch to activate or deactivate wireless telephone service in real-time. The application also managed the subscriber call detail records. James and I also worked together at Ingenious Med (IM). James was a senior member of the Reporting and Data Warehouse application when he arrived at IM. He designed and implemented the security portion of the application. He was also a member of the application architecture team and later worked as part of the Integration team. He is always willing to do what is needed to keep the application moving forward. His technical skills are a true asset as well as his knowledge and experience. As the CTO at Ingenious Med, I was happy to have James as part of the Technical team and appreciated his contributions very much.",
+      "user": "Jim Keener - CTO, Ingenious Med"
+    },
+    {
+      "text": "James is a very talented business and technical leader. We used to say 'he is a one-may IT shop'. He has tremendous skills and has always been a solid leader.",
+      "user": "Lee Huggins - SVP, Total Software Solutions"
+    }
+  ],
+  "portfolio": {
+    "projects": [
+      {
+        "title": "FHIR Interface",
+        "category": "",
+        "image": "",
+        "url": "https://www.google.com"
+      }
+    ]
+  }
+
+  }
