@@ -155,10 +155,12 @@
            Message: contactMessage
        }
 
+
+
       $.ajax({
 
 	      type: "POST",
-          url: "SendMail",
+          url: "SendMail/",
           contentType: "application/json; charset=utf-8",
           data: JSON.stringify(data),
 	      success: function(msg) {
