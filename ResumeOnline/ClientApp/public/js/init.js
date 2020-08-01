@@ -159,10 +159,15 @@
 
       $.ajax({
 
-	      type: "POST",
-          url: "SendMail/",
-          contentType: "application/json; charset=utf-8",
+
+          url: "SendMail",
+          method: 'post',
+          contentType: 'application/json; charset=utf-8',
           data: JSON.stringify(data),
+
+          async: true,
+          cache: false,
+
 	      success: function(msg) {
 
             // Message was sent
