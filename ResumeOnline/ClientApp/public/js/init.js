@@ -185,9 +185,8 @@
             }
 
           },
-          error: function (msg) {
-              debugger;
-              alert(msg+"There was an error. Try again please!");
+          error: function (error) {
+              console.log(JSON.stringify(error));
           }
 
       });
