@@ -16,25 +16,29 @@ namespace ResumeOnline.Controllers
         static string emailFromAddress = "jamesdmyers2@gmail.com";
 
         [HttpPost]
-        public async Task<string> PostAsync(SendEmailInterface res)
+        public string Post(string res)
         {
-            return "Made it here!";
-            try
-            {
-                var response = await Execute(res);
-                if (response == "Accepted")
-
-                    return "Email has been sent, thank you!";
-                else
-                    return "Email Failed";
-
-            }
-            catch (Exception ex)
-            {
-                return "There was problem sending the email...please try again.";
-            }
-
+            return "Posted";
         }
+        //public async Task<string> PostAsync(SendEmailInterface res)
+        //{
+        //    return "Made it here!";
+        //    try
+        //    {
+        //        var response = await Execute(res);
+        //        if (response == "Accepted")
+
+        //            return "Email has been sent, thank you!";
+        //        else
+        //            return "Email Failed";
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return "There was problem sending the email...please try again.";
+        //    }
+
+        //}
 
         static async Task<string> Execute(SendEmailInterface res)
         {
