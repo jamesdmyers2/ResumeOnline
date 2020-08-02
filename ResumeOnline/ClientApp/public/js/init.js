@@ -161,7 +161,7 @@
 
 
           url: "SendMail",
-          method: 'post',
+          method: 'get',
           contentType: 'application/json; charset=utf-8',
           data: JSON.stringify(data),
 
@@ -171,6 +171,7 @@
 	      success: function(msg) {
 
             // Message was sent
+
             if (msg == 'OK') {
                $('#image-loader').fadeOut();
                $('#message-warning').hide();

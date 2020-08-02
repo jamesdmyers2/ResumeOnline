@@ -15,11 +15,18 @@ namespace ResumeOnline.Controllers
     {
         static string emailFromAddress = "jamesdmyers2@gmail.com";
 
+        [HttpGet]
+        public string Get()
+        {
+            return "Gottin";
+        }
+
         [HttpPost]
         public string Post(string res)
         {
             return "Posted";
         }
+        //[HttpPost]
         //public async Task<string> PostAsync(SendEmailInterface res)
         //{
         //    return "Made it here!";
