@@ -162,7 +162,7 @@
 
           url: "SendMail",
           method: 'get',
-          contentType: 'application/json; charset=utf-8',
+          contentType: 'application/json',
           data: JSON.stringify(data),
 
           async: true,
