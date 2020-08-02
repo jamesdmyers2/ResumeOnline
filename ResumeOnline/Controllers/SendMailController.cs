@@ -22,7 +22,7 @@ namespace ResumeOnline.Controllers
         }
 
         [HttpPost]
-        public string Post(string res)
+        public string Post(Object res)
         {
             return "Posted";
         }
