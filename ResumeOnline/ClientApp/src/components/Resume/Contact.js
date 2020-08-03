@@ -140,6 +140,7 @@ export function Contact() {
 
 
                 </aside>
+            </div>
         </section>
     )
 };
