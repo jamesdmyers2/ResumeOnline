@@ -151,6 +151,9 @@ export function Contact() {
 
 
                 </aside>
+                <div>
+                    100.2
+                    </div>
             </div>
         </section>
     )
