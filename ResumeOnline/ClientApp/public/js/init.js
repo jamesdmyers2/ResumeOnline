@@ -134,7 +134,6 @@
 
 /*----------------------------------------------------*/
 /*	contact form
- *	REMOVED TO USE AXIOS IN CONTACT.JS PAGE
 ------------------------------------------------------*/
 
    //$('form#contactForm button.submit').click(function() {
