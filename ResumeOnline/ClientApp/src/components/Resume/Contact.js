@@ -4,8 +4,6 @@ import resumeData from "./Resume";
 import axios from 'axios';
 import { Fade } from 'react-bootstrap';
 
-//ajax call performed in init.js on submit
-
 const basicList = resumeData.basics;
 const message = "Thank you for viewing my profile, please reach out below."
 export function Contact() {
@@ -50,20 +48,11 @@ export function Contact() {
                 setFadeInImageLoader(false);
                 setFadeInMessageWarning(false);
                 setFadeInMessageSuccess(true);
-
-                //$('#image-loader').fadeOut();
-                //$('#message-warning').hide();
-                //$('#contactForm').fadeOut();
-                //$('#message-success').fadeIn();   
             } else {
                 debugger;
                 setFadeInImageLoader(false);
                 setMessageWarning(resMessage);
                 setFadeInMessageWarning(true);
-                //$('#image-loader').fadeOut();
-                //$('#message-warning').html(msg);
-                //$('#message-warning').fadeIn();
-
             }
         }).catch(error => {
             console.log(JSON.stringify(error));
@@ -151,11 +140,6 @@ export function Contact() {
 
 
                 </aside>
-                <div>
-                    100.2
-                    </div>
-            </div>
         </section>
     )
-
 };

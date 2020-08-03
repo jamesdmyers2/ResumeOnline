@@ -33,7 +33,9 @@ export function Header() {
                             <p>{i}</p>
                         )
                         )}
-                <br /><p style={{fontSize:"75%"}}>**Review the code at:  <a href={'//' + basicList.github} target="_blank" >{basicList.github}</a></p></h3>
+                            <br /><p style={{ fontSize: "75%" }}>Review the code on GitHub @
+                                <br/>
+                                <a href={'//' + basicList.github} target="_blank" >{basicList.github}</a></p></h3>
                     
                         </div>
                     <hr />

@@ -68,7 +68,7 @@ export function ProfExperience() {
                     <h1><span>Skills</span></h1>
                 </div>
 
-                <div className="nine columns main-col">
+                <div id="bars" className="nine columns main-col">
 
                     <div className="bars">
                         <ul className="skills">
