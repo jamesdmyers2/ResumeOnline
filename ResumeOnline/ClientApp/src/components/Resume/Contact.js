@@ -44,8 +44,9 @@ export function Contact() {
         var endPoint = "/sendmail";
 
         axios.post(endPoint, data).then(res => {
+            var resMessage = res.data[0].message
             debugger;
-            if (res.data === 'Accepted') {
+            if (resMessage === 'Accepted') {
                 setFadeInImageLoader(false);
                 setFadeInMessageWarning(false);
                 setFadeInMessageSuccess(true);
@@ -57,7 +58,7 @@ export function Contact() {
             } else {
                 debugger;
                 setFadeInImageLoader(false);
-                setMessageWarning(res.data);
+                setMessageWarning(resMessage);
                 setFadeInMessageWarning(true);
                 //$('#image-loader').fadeOut();
                 //$('#message-warning').html(msg);
