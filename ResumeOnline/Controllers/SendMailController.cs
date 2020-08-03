@@ -21,31 +21,22 @@ namespace ResumeOnline.Controllers
             return "Gottin";
         }
 
+
         [HttpPost]
-        public string Post(Object res)
+        public async Task<string> PostAsync(SendEmailInterface res)
         {
-            return "Posted";
+            try
+            {
+                var response = await Execute(res);
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                return "There was problem sending the email...please try again: "+ex.Message;
+            }
+
         }
-        //[HttpPost]
-        //public async Task<string> PostAsync(SendEmailInterface res)
-        //{
-        //    return "Made it here!";
-        //    try
-        //    {
-        //        var response = await Execute(res);
-        //        if (response == "Accepted")
-
-        //            return "Email has been sent, thank you!";
-        //        else
-        //            return "Email Failed";
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return "There was problem sending the email...please try again.";
-        //    }
-
-        //}
 
         static async Task<string> Execute(SendEmailInterface res)
         {
