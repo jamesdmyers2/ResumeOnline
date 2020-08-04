@@ -89,6 +89,31 @@
         "Developed application solutions compatible with multiple versions of Windows and Chrome platforms",
         "Used agile methodologies to estimate story points for development sprints"
       ]
+    },
+    {
+      "company": "COMMSOFT",
+      "position": "Senior Software Engineer ",
+      "website": "http://commsoft.com",
+      "startDate": "2009-05-01",
+      "endDate": "2009-12-31",
+      "summary": "Contract development engineer responsible for day to day support and development of new system functionality.",
+      "highlights": [
+        "Developed, tested and implemented provisioning functionality for wireless and landline telephone voicemail service, switch interfaces, radius servers, ISP cable and alarm service platforms",
+        "Performed reconciliation audits and implemented fixes across multiple platforms"
+      ]
+    },
+    {
+      "company": "VERISIGN",
+      "position": "Manager, Engineering ",
+      "website": "http://verisign.com",
+      "startDate": "1997-03-01",
+      "endDate": "2009-04-30",
+      "summary": "Reporting to the VP of Switch Engineering managed a team responsible for the design, development and implementation of Switch Engineering applications",
+      "highlights": [
+        "Promoted to manager, responsible for build ing and lead ing a team to migrate the legacy system to a Java/Oracle NextGen system. Oversight and ma nagement of all R&D and implementation for project",
+        "Lead the team responsible for developing and maintaining switch provisioning programs for Ericsson Lucent Motorola and Northern Telecom switches and provisioning programs for Glenayre and Lightbridge voice mail platforms",
+        "Designed and developed new applications to improve the platform performance and customer experience"
+      ]
     }
   ],
   "volunteer": [

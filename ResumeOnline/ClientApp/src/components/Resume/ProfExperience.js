@@ -55,6 +55,7 @@ export function ProfExperience() {
                                         <li key={h}>{h}</li>
                                     )
                                     )}
+                                    <br/>
                                 </div>
                             </div>
                         ))}
