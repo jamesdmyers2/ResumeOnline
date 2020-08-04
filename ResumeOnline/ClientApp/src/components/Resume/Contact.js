@@ -17,15 +17,66 @@ export function Contact() {
     const [contactSubject, setContactSubject] = useState('');
     const [contactMessage, setContactMessage] = useState('');
     const [showSuccessMessage, setShowSuccessMessage] = useState('true');
+    const [errors, setErrors] = useState({ contactName: '', contactEmail: '', contactSubject: '', contactMessage: '' });
 
-    function handleChange(e) {
+
+    const validEmailRegex =
+        RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
+
+
+    function handleChange(event) {
+        event.preventDefault();
+        const { name, value } = event.target;
+        switch (name) {
+            case 'contactName':
+                setContactName(value);
+                errors.contactName =
+                    value.length < 5
+                        ? 'Full Name must be at least 5 characters long!'
+                        : '';
+                break;
+            case 'contactEmail':
+                setContactEmail(value);
+                errors.contactEmail =
+                    validEmailRegex.test(value)
+                        ? ''
+                        : 'Email is not valid!';
+                break;
+            case 'contactSubject':
+                setContactSubject(value);
+                errors.contactSubject =
+                    value.length < 5
+                        ? 'Subject must be at least 5 characters long!'
+                        : '';
+                break;
+            case 'contactMessage':
+                setContactMessage(value);
+                errors.contactMessage =
+                    value.length < 8
+                        ? 'Message must be at least 8 characters long!'
+                        : '';
+                break;
+            default:
+                break;
+        }
 
     }
 
     function handleSubmit(event) {
         event.preventDefault();
-        sendMailData();
+        debugger;
+        if (((errors.contactName.length || errors.contactEmail.length || errors.contactSubject.length || errors.contactMessage.length) > 0)
+            || ((contactName && contactEmail && contactSubject && contactMessage) === ''))
+        {
+            setMessageWarning("Unable to Submit request, please check required fields");
+            setShowSuccessMessage(false);
+            setFadeInMessageWarning(true);
+        } else {
+            sendMailData();
+        }   
     }
+
+
 
     async function sendMailData() {
         setFadeInImageLoader(true);
@@ -34,7 +85,8 @@ export function Contact() {
 
         var data = {
             Name: contactName,
-            Email: contactEmail,
+            FromEmail: basicList.email,
+            ToEmail: contactEmail,
             Subject: contactSubject,
             Message: contactMessage
         }
@@ -60,19 +112,19 @@ export function Contact() {
     }
 
     const showMessageWarning = (
-        <Fade in={fadeInMessageWarning} className="col3">
+        <Fade in={fadeInMessageWarning}>
             <div id="message-warning">{messageWarning}</div>
         </Fade>
     );
 
     const showMessageSuccess = (
-        <Fade in={fadeInMessageSuccess} className="col3">
+        <Fade in={fadeInMessageSuccess}>
             <div id="message-success">
 
                 <i className="fa fa-check"></i>Your message was sent, thank you!<br />
             </div>
         </Fade>
-        )
+    )
 
     const messages = showSuccessMessage
         ? showMessageSuccess
@@ -105,35 +157,51 @@ export function Contact() {
 
                             <div>
                                 <label htmlFor="contactName">Name <span className="required">*</span></label>
-                                <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={e => setContactName(e.target.value)} />
-                            </div>
-
-                            <div>
-                                <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                                <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={e => setContactEmail(e.target.value)} />
-                            </div>
-
-                            <div>
-                                <label htmlFor="contactSubject">Subject</label>
-                                <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={e => setContactSubject(e.target.value)} />
-                            </div>
-
-                            <div>
-                                <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                                <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" onBlur={e => setContactMessage(e.target.value)}></textarea>
-                            </div>
-                            <div>
-                                <div className="col1">
-                                    <button className="submit">Submit</button>
+                                <div className="form-field">
+                                    <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={handleChange} />
+                                    {errors.contactName.length > 0 &&
+                                        <span className='error'>{errors.contactName}</span>}
                                 </div>
-
-                                <Fade in={fadeInImageLoader} className="col2">
-                                    <div>
-                                        <img alt="" src="images/loader.gif" />
-                                    </div>
-                                </Fade>
-                                {messages}
                             </div>
+
+                        <div>
+                            <label htmlFor="contactEmail">Email <span className="required">*</span></label>
+                            <div className="form-field" >
+                                    <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={handleChange} />
+                                    {errors.contactEmail.length > 0 &&
+                                        <span className='error'>{errors.contactEmail}</span>}
+                            </div>
+                        </div>
+
+                    <div>
+                                <label htmlFor="contactSubject">Subject<span className="required">*</span></label>
+                                <div className="form-field" >
+                                    <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={handleChange} />
+                                    {errors.contactSubject.length > 0 &&
+                                        <span className='error'>{errors.contactSubject}</span>}
+                                </div>
+                    </div>
+
+                    <div>
+                                <label htmlFor="contactMessage">Message <span className="required">*</span></label>
+                                <div className="form-field" >
+                                    <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" onChange={handleChange}></textarea>
+                                    {errors.contactMessage.length > 0 &&
+                                        <span className='error'>{errors.contactMessage}</span>}
+                                </div>
+                    </div>
+                    <div>
+                        <div className="col1">
+                            <button className="submit">Submit</button>
+                        </div>
+
+                        <Fade in={fadeInImageLoader} className="col2">
+                            <div>
+                                <img alt="" src="images/loader.gif" />
+                            </div>
+                        </Fade>
+                        {messages}
+                    </div>
 
                         </fieldset>
                     </form>
@@ -142,20 +210,20 @@ export function Contact() {
                 </div>
 
 
-                <aside className="four columns footer-widgets">
-                    <div className="widget widget_contact">
+        <aside className="four columns footer-widgets">
+            <div className="widget widget_contact">
 
-                        <h4>Address and Phone</h4>
-                        <p className="address">
-                            {basicList.name}<br />
-                            {basicList.location.city}, {basicList.location.state} {basicList.location.postalCode}<br />
-                            <span>{basicList.phone}</span>
-                        </p>
-                    </div>
-
-
-                </aside>
+                <h4>Address and Phone</h4>
+                <p className="address">
+                    {basicList.name}<br />
+                    {basicList.location.city}, {basicList.location.state} {basicList.location.postalCode}<br />
+                    <span>{basicList.phone}</span>
+                </p>
             </div>
-        </section>
+
+
+        </aside>
+            </div >
+        </section >
     )
 };
