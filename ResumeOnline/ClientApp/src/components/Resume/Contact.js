@@ -16,7 +16,7 @@ export function Contact() {
     const [contactEmail, setContactEmail] = useState('');
     const [contactSubject, setContactSubject] = useState('');
     const [contactMessage, setContactMessage] = useState('');
-    const [imageFade, setImageFade] = useState('fade-in');
+    const [showSuccessMessage, setShowSuccessMessage] = useState('true');
 
     function handleChange(e) {
 
@@ -43,13 +43,13 @@ export function Contact() {
 
         axios.post(endPoint, data).then(res => {
             var resMessage = res.data[0].message
-            debugger;
             if (resMessage === 'Accepted') {
+                setShowSuccessMessage(true);
                 setFadeInImageLoader(false);
                 setFadeInMessageWarning(false);
                 setFadeInMessageSuccess(true);
             } else {
-                debugger;
+                setShowSuccessMessage(false);
                 setFadeInImageLoader(false);
                 setMessageWarning(resMessage);
                 setFadeInMessageWarning(true);
@@ -58,6 +58,25 @@ export function Contact() {
             console.log(JSON.stringify(error));
         })
     }
+
+    const showMessageWarning = (
+        <Fade in={fadeInMessageWarning} className="col3">
+            <div id="message-warning">{messageWarning}</div>
+        </Fade>
+    );
+
+    const showMessageSuccess = (
+        <Fade in={fadeInMessageSuccess} className="col3">
+            <div id="message-success">
+
+                <i className="fa fa-check"></i>Your message was sent, thank you!<br />
+            </div>
+        </Fade>
+        )
+
+    const messages = showSuccessMessage
+        ? showMessageSuccess
+        : showMessageWarning;
 
     return (
         <section id="contact">
@@ -103,26 +122,22 @@ export function Contact() {
                                 <label htmlFor="contactMessage">Message <span className="required">*</span></label>
                                 <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" onBlur={e => setContactMessage(e.target.value)}></textarea>
                             </div>
-
                             <div>
-                                <button className="submit">Submit</button>
-                                <Fade in={fadeInImageLoader}>
+                                <div className="col1">
+                                    <button className="submit">Submit</button>
+                                </div>
+
+                                <Fade in={fadeInImageLoader} className="col2">
                                     <div>
                                         <img alt="" src="images/loader.gif" />
                                     </div>
                                 </Fade>
+                                {messages}
                             </div>
+
                         </fieldset>
                     </form>
-                    <Fade in={fadeInMessageWarning}>
-                        <div id="message-warning">{messageWarning}</div>
-                    </Fade>
-                    <Fade in={fadeInMessageSuccess}>
-                    <div id="message-success">
-
-                        <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-                        </div>
-                    </Fade>
+                    
 
                 </div>
 

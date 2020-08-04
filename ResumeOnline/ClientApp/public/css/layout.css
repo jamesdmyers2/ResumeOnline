@@ -287,6 +287,9 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
+#resume .work ul {
+	list-style: outside;
+}
 
 
 
@@ -428,6 +431,10 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
+
+#portfolio .container {
+	word-break: break-word;
+}
 
 #portfolio {
    background: #ebeeee;
@@ -897,6 +904,23 @@ call-to-action .button {
 	color: #11ABB0;
 	font-size: 13px;
 }
+
+#contact .col1 {
+	width: 25%;
+	display: inline;
+}
+
+	#contact .col2 {
+		width: 25%;
+		display: inline;
+	}
+
+	#contact .col3 {
+		width: 40%;
+		display: inline;
+		margin: auto;
+	}
+
 #message-warning, #message-success {
    /*display: none;*/
 	background: #0F0F0F;

@@ -22,9 +22,9 @@ export function Portfolio() {
                         <Container>
                             <Row>
 
-                                <h3 style={{ borderBottom: "1px solid grey", padding: "2rem" }}> Below is a sample program written in React with a C# backend that connects with the Epic FHIR Sandbox
-                            to pull FHIR data data that is then parsed and displayed on the screen.
-                                    </h3>
+                                <h1 style={{ borderBottom: "1px solid grey", padding: "2rem" }}> Below is a sample program written in React with a C# backend that connects with the Epic FHIR Sandbox
+                            to pull FHIR data that is then parsed and displayed on the screen.
+                                    </h1>
 
                             </Row>
                             <Row style={{display: "block"}}>
