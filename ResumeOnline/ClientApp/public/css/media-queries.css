@@ -60,7 +60,7 @@
    /* Resume Section
    ------------------------------------------------------------------- */
    #resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
-   #resume .main-col { padding-right: 5%; }   
+   #resume .main-col { padding: 0 10% 0 10%; }   
 
    /* Testimonials Section
    ------------------------------------------------------------------- */
