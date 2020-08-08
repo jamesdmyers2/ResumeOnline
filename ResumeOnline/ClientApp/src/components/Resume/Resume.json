@@ -9,7 +9,7 @@
     "linkedin": "www.linkedin.com/in/james-d-myers-ii",
     "intro": [
       "Welcome To My Online Resume!",
-      "This site showcases my skills in building a website utilizing React.js, C#, bootstrap, Axios, json, and other technologies, as well as giving you my background."
+      "I have created this site using React.js, C#, bootstrap, Axios, json, and other technologies in order to showcase my skills and provide an easy place to see my extensive background in the software development industry."
     ],
     "summary": "Management and development professional with 20 years of Information Technology experience in the healthcare, telecommunications and accounting industries.  Strong emphasis on development and implementation of new technologies and API’s",
     "highlights": [
@@ -49,7 +49,7 @@
       "state": "GA",
       "website": "http://akamai.com",
       "startDate": "2018-08-01",
-      "endDate": "2019-09-01",
+      "endDate": "2019-10-01",
       "summary": "Focused on maximizing customer satisfaction, retention and growth by building strong customer relationships, driving value reinforcement and adoption of products and services, and managing technical teams to deliver integration solutions.",
       "highlights": [
         "Central point of contact for Fortune 500 customers with a combined ARR of $10MM, serving as the escalation point for success resolution of operational issues",
@@ -162,27 +162,27 @@
   "skills": [
     {
       "name": "C#",
-      "level": "60%"
+      "level": "70%"
     },
     {
       "name": "JAVA",
-      "level": "50%"
+      "level": "60%"
     },
     {
       "name": "PHP",
-      "level": "40%"
+      "level": "50%"
     },
     {
       "name": "Visual Basic",
-      "level": "20%"
-    },
-    {
-      "name": "React",
       "level": "30%"
     },
     {
       "name": "JavaScript",
-      "level": "50%"
+      "level": "70%"
+    },
+    {
+      "name": "React",
+      "level": "40%"
     },
     {
       "name": "MySQL",
@@ -194,12 +194,12 @@
       "level": "90%"
     },
     {
-      "name": "SOAP",
-      "level": "50%"
+      "name": "AJAX/AXIOS",
+      "level": "60%"
     },
     {
       "name": "HL7",
-      "level": "40%"
+      "level": "50%"
     },
     {
       "name": "HTML",
