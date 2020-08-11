@@ -35,8 +35,8 @@ namespace ResumeOnline.Controllers
 
         static async Task<IEnumerable<SendMailResponse>> Execute(SendEmailInterface req)
         {
-            var apiKey = Environment.GetEnvironmentVariable("NAME_OF_THE_ENVIRONMENT_VARIABLE_FOR_YOUR_SENDGRID_KEY");
-            var client = new SendGridClient("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");
+            var apiKey = Environment.GetEnvironmentVariable("SENDGRID_APIKEY");
+            var client = new SendGridClient(apiKey);
             var from = new EmailAddress(req.FromEmail);
             var subject = req.Subject;
             var to = new EmailAddress(req.ToEmail);
