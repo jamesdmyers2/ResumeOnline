@@ -7,6 +7,7 @@ import "./resume.css";
 const workList = resumeData.work;
 const educationList = resumeData.education;
 const skillsList = resumeData.skills;
+const certList = resumeData.certifications;
 
 var skills = skillsList.map(function (skills) {
     var className = 'bar-expand ' + skills.name.toLowerCase();
@@ -32,6 +33,24 @@ export function ProfExperience() {
                                     <p className="info">{e.area}</p>
                                     <p className="info">{e.studyType}</p>
                                     </div> 
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="row education">
+                <div className="three columns header-col">
+                    <h1><span>Certifications</span></h1>
+                </div>
+
+                <div className="nine columns main-col">
+                    <div className="row item">
+                        <div className="twelve columns">
+                            {certList.map(e => (
+                                <div key={e.name}><h3>{e.name}</h3>
+                                    <p className="info">{e.issuer}</p>
+                                </div>
                             ))}
                         </div>
                     </div>

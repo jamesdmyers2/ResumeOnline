@@ -145,18 +145,18 @@
   "awards": [
     {
       "title": "Award",
-      "date": "2014-11-01",
+      "date": "2001-01-01",
       "awarder": "Company",
-      "summary": "There is no spoon."
+      "summary": "G"
     }
   ],
   "publications": [
     {
       "name": "Publication",
       "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "website": "http://publication.com",
-      "summary": "Description..."
+      "releaseDate": "2001-01-01",
+      "website": "",
+      "summary": ""
     }
   ],
   "skills": [
@@ -220,9 +220,15 @@
     {
       "name": "Wildlife",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "",
+        ""
       ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Cloud Practioner",
+      "issuer": "Amazon Web Services (AWS)"
     }
   ],
   "references": [
@@ -252,4 +258,4 @@
     ]
   }
 
-  }
+}
