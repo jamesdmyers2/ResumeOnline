@@ -48,8 +48,8 @@
       "city": "Atlanta",
       "state": "GA",
       "website": "http://akamai.com",
-      "startDate": "2018-10-01",
-      "endDate": "2019-10-01",
+      "startDate": "2018",
+      "endDate": "2020",
       "summary": "Focused on maximizing customer satisfaction, retention and growth by building strong customer relationships, driving value reinforcement and adoption of products and services, and managing technical teams to deliver integration solutions.",
       "highlights": [
         "Central point of contact for Fortune 500 customers with a combined ARR of $10MM, serving as the escalation point for success resolution of operational issues",
@@ -61,8 +61,8 @@
       "company": "PURSUANT HEALTH",
       "position": "Senior Software Engineer ",
       "website": "http://pursuanthealth.com",
-      "startDate": "2017-02-01",
-      "endDate": "2017-12-30",
+      "startDate": "2017",
+      "endDate": "2018",
       "summary": "Responsible for the design, development and support of a consumer facing healthcare application in a LAMP stack environment",
       "highlights": [
         "PHP Full Stack Developer",
@@ -94,8 +94,8 @@
       "company": "COMMSOFT",
       "position": "Senior Software Engineer ",
       "website": "http://commsoft.com",
-      "startDate": "2009-05-01",
-      "endDate": "2009-12-31",
+      "startDate": "2009",
+      "endDate": "2012",
       "summary": "Contract development engineer responsible for day to day support and development of new system functionality.",
       "highlights": [
         "Developed, tested and implemented provisioning functionality for wireless and landline telephone voicemail service, switch interfaces, radius servers, ISP cable and alarm service platforms",
@@ -106,8 +106,8 @@
       "company": "VERISIGN",
       "position": "Manager, Engineering ",
       "website": "http://verisign.com",
-      "startDate": "1997-03-01",
-      "endDate": "2009-04-30",
+      "startDate": "1997",
+      "endDate": "2009",
       "summary": "Reporting to the VP of Switch Engineering managed a team responsible for the design, development and implementation of Switch Engineering applications",
       "highlights": [
         "Promoted to manager, responsible for build ing and lead ing a team to migrate the legacy system to a Java/Oracle NextGen system. Oversight and ma nagement of all R&D and implementation for project",
