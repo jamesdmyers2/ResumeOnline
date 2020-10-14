@@ -68,7 +68,7 @@ export function ProfExperience() {
                         {workList.map(s => (
                             <div key={s.company}>
                                 <div ><h3>{s.company}</h3>
-                                    <p className="info">{s.position}<span>&bull;</span> <em className="date">{dateFormat(s.startDate, "mm-dd-yyyy")} - {dateFormat(s.endDate, "mm-dd-yyyy")}</em></p>
+                                    <p className="info">{s.position}<span>&bull;</span> <em className="date">{s.startDate} - {s.endDate}</em></p>
                                     <li>{s.summary}</li>
                                     {s.highlights.map(h => (
                                         <li key={h}>{h}</li>
